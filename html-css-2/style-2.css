@@ -1,0 +1,122 @@
+body{
+    width: 100%;
+    margin: 0;
+}
+
+.row-1 {
+    margin-top: 0;
+    width: 100%;
+    background-color:aquamarine;
+    padding: 30px;
+}
+
+.row-1 h1 {
+
+}
+
+.row-2{
+
+}
+
+.row-2 h3{
+
+}
+
+.border-1{
+    width: 90%;
+    
+}
+
+.rec-1{
+    width: 200px;
+    height: 100px;
+    background-color: blueviolet;
+    display: inline-block;
+}
+
+.rec-2{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    display: inline-block;
+}
+
+.rec-3{
+    width: 200px;
+    height: 200px;
+    background-color: palevioletred;
+    display: inline-block;
+}
+
+.row-3{
+
+}
+
+.row-3 h3{
+
+}
+
+.border-2{
+
+}
+
+.circle-1{
+
+}
+
+.eye-1{
+
+}
+
+.eye-2{
+
+}
+
+.nose{
+
+}
+
+.circle-2{
+
+}
+
+.button-1{
+
+}
+
+.button-2{
+
+}
+
+.button-3{
+
+}
+
+.circle-3{
+
+}
+
+.row-4{
+
+}
+
+.row-4 h3{
+
+}
+
+.square-1{
+
+}
+
+.circle-4{
+
+}
+
+.square-2{
+
+}
+
+.circle-5{
+
+}
+
