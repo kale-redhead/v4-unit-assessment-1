@@ -42,7 +42,7 @@ function addItem(item){
 */
 
 function removeItem(index){
-    groceries.slice(index, 1);
+    groceries.splice(index, 1);
     displayData();
 }
 
@@ -58,10 +58,10 @@ function removeItem(index){
 */
 
 function checkGroceryCount(){
-    if(groceries.length = 1){
+    if(groceries.length === 1){
         return '1 item';
     }
-    else if (1 > groceries.length < 5){
+    else if (groceries.length > 1 && groceries.length <= 5){
         return groceries.length + ' items';
     }
     else{

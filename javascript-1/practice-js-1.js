@@ -89,7 +89,7 @@ colorCopy.push('pink');
 
 const numbers = [1, 2, 3, 4, 5]
 
-let middleNums = numbers.slice(1,3);
+let middleNums = numbers.slice(1,3)
 
 //////////////////PROBLEM 11////////////////////
 /*
@@ -130,11 +130,11 @@ let me = {
 function bigOrSmall(arr){
   let answers = [];
   for(let i = 0; i < arr.length; i ++){
-    if (arr[i] > 100){
-      answers.push('big');
+    if (arr[i] <= 100){
+      answers.push('small');
     }
     else{
-      answers.push('small');
+      answers.push('big');
     }
   }
 }
@@ -200,7 +200,7 @@ let secondFunctionScope = ['global', 'functional']
 */
 
 function firstItem(arr, callback){
-
+  callback(arr[0]);
 }
 
 //////////////////PROBLEM 16////////////////////
@@ -213,7 +213,10 @@ function firstItem(arr, callback){
 
 function isItBob(object, callback){
   if(object.name === 'Bob'){
-
+    callback(true);
+  }
+  else{
+    callback(false);
   }
 }
 
@@ -226,8 +229,9 @@ function isItBob(object, callback){
 
 function giveMeDoubles(nums, callback){
   for(let i = 0; i < nums.length; i++){
-
+    nums.slice(nums[i]);
   }
+  callback(nums);
 }
 
 //////////////////PROBLEM 18////////////////////
@@ -257,8 +261,15 @@ function giveMeDoubles(nums, callback){
 
 function carFactory(make, model, year){
   let car = {
-    make: '',
-    model: '',
-    year: 2020
+    make: make,
+    model: model,
+    year: year
+  }
+
+  if(year > 2018){
+    car.isNew = true;
+  }
+  else{
+    car.isNew = false;
   }
 }
