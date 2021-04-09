@@ -32,10 +32,10 @@ function sum(num1, num2){
 */
 
 function trueOrFalse(data){
-  if (data === truthy){
+  if (data){
     return true;
   }
-  if (data === falsy){
+  else{
     return false;
   }
 }
