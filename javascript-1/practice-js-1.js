@@ -127,16 +127,21 @@ let me = {
   Return the answers array inside of the function.
 */
 
+// function bigOrSmall(arr){
+//   let answers = [];
+//   for(let i = 0; i < arr.length; i ++){
+//     if (arr[i] <= 100){
+//       answers.push('small');
+//     }
+//     else{
+//       answers.push('big');
+//     }
+//   }
+// }
+
 function bigOrSmall(arr){
-  let answers = [];
-  for(let i = 0; i < arr.length; i ++){
-    if (arr[i] <= 100){
-      answers.push('small');
-    }
-    else{
-      answers.push('big');
-    }
-  }
+  let answers = answers.push(arr[""])
+  arr > 100 ? answers.push(arr["big"]) : answers.push(arr["small"]);
 }
 
 //////////////////PROBLEM 13////////////////////
@@ -228,10 +233,11 @@ function isItBob(object, callback){
 */
 
 function giveMeDoubles(nums, callback){
+  let doubles = [];
   for(let i = 0; i < nums.length; i++){
-    nums.slice(nums[i]);
+    doubles.push(nums[i]*2);
   }
-  callback(nums);
+  callback(doubles);
 }
 
 //////////////////PROBLEM 18////////////////////
