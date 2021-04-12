@@ -127,21 +127,11 @@ let me = {
   Return the answers array inside of the function.
 */
 
-// function bigOrSmall(arr){
-//   let answers = [];
-//   for(let i = 0; i < arr.length; i ++){
-//     if (arr[i] <= 100){
-//       answers.push('small');
-//     }
-//     else{
-//       answers.push('big');
-//     }
-//   }
-// }
-
 function bigOrSmall(arr){
-  let answers = answers.push(arr[""])
-  arr > 100 ? answers.push(arr["big"]) : answers.push(arr["small"]);
+  let answers = answers.push(arr[""]);
+  for(let i = 0; i < arr.length; i ++){
+    arr > 100 ? answers.push(arr["big"]) : answers.push(arr["small"]);
+  }
 }
 
 //////////////////PROBLEM 13////////////////////
@@ -278,4 +268,5 @@ function carFactory(make, model, year){
   else{
     car.isNew = false;
   }
+  return car(make, model, year);
 }
